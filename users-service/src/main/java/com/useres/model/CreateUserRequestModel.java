@@ -1,17 +1,13 @@
 package com.useres.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-@Getter
-@Setter
-@AllArgsConstructor
-public class UserRequestModel {
+@Data // = ( @ToString + @EqualsAndHashCode + @Getter + @Setter +  @RequiredArgsConstructor)
+public class CreateUserRequestModel {
     @NotNull(message = "first name can not be null")
     @Size(min = 2, message = "first name size must be at least two character")
     private String firstname;
