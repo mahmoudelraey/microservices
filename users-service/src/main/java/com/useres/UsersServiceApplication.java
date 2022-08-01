@@ -11,6 +11,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @EnableEurekaClient
 public class UsersServiceApplication {
 
+
 	public static void main(String[] args) {
 		SpringApplication.run(UsersServiceApplication.class, args);
 	}
